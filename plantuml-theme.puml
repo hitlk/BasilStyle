@@ -1,0 +1,57 @@
+@startuml
+
+!define Background   #2d2d2d
+!define CurrentLine  #393939
+!define Selection    #515151
+!define Foregound    #cccccc
+!define Comment      #999999
+!define Red          #f2777a
+!define Orange       #f99157
+!define Yellow       #ffcc66
+!define Green        #99cc99
+!define Aqua         #66cccc
+!define Blue         #6699cc
+!define Purple       #cc99cc
+
+skinparam HandWritten false
+skinparam Shadowing false
+skinparam BackgroundColor Background
+skinparam Default {
+    FontName Consolas
+    FontColor Aqua
+    FontSize 16
+}
+skinparam Class {
+    BackgroundColor CurrentLine
+    FontStyle bold
+    BorderColor Selection
+    AttributeFontStyle bold
+    HeaderBackgroundColor Selection
+    ArrowColor Orange
+}
+skinparam CircledCharacter {
+    FontColor Blue
+}
+
+skinparam stereotypeCBackgroundColor Purple
+skinparam stereotypeIBackgroundColor Yellow
+skinparam packageBackgroundColor PapayaWhip
+
+skinparam State {
+    BackgroundColor CurrentLine
+    BorderColor Selection
+    StartColor Purple
+    FontColor Red
+    AttributeFontSize 12
+}
+
+skinparam Arrow {
+    Color Orange
+    MessageAlignment center
+}
+
+skinparam Caption {
+    FontColor Foregound
+}
+
+@enduml
